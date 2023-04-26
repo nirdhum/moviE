@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #212A3E;
+    --secondary-color: #394867;
+    --tertiary-color: #9BA4B5;
+    --color-light: #F1F6F9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    /* padding: 20px; */
+}
+
+header {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+h1 {
+    font-family: 'Slackey', cursive;
+    color: var(--color-light);
+    position: absolute;
+    left: 1rem;
+    top: 0;
+}
+
+.search {
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid var(--primary-color);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    color: var(--color-light);
+}
+
+.search::placeholder {
+    color: var(--tertiary-color);
+}
+
+.search:focus {
+    outline: none;
+    background-color: var(--primary-color);
+}
