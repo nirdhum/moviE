@@ -56,3 +56,78 @@ h1 {
     outline: none;
     background-color: var(--primary-color);
 }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background-color: var(--secondary-color);
+    width: 300px;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: inherit;
+}
+
+.movie-detail {
+    display: flex;
+    color: var(--color-light);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0.5rem;
+    letter-spacing: 1px;
+}
+
+.movie-detail h3 {
+    margin-top: 2;
+}
+
+.movie-detail span {
+    background-color: var(--primary-color);
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.movie-detail span.green {
+    color: lawngreen;
+}
+
+.movie-detail span.orange {
+    color: orange;
+}
+
+.movie-detail span.red {
+    color: red;
+}
+
+.overview {
+    background-color: var(--color-light);
+    color: var(--primary-color);
+    padding: 1rem 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    border-radius: inherit;
+    transform: translateY(101%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.overview h3 {
+    margin-top: 0;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
