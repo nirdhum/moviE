@@ -74,7 +74,7 @@ main {
 
 .movie img {
     width: 100%;
-    border-radius: inherit;
+    border-radius: inherit 0;
 }
 
 .movie-detail {
@@ -120,8 +120,10 @@ main {
     right: 0;
     max-height: 100%;
     border-radius: inherit;
-    transform: translateY(101%);
+    transform: translateY(105%);
     transition: transform 0.5s ease-in-out;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
+    /* visibility: hidden; */
 }
 
 .overview h3 {
@@ -130,4 +132,5 @@ main {
 
 .movie:hover .overview {
     transform: translateY(0);
+    /* visibility: visible; */
 }
