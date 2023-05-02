@@ -16,6 +16,8 @@ body {
     background-color: var(--primary-color);
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
+    align-items: center;
+    justify-content: center;
     /* padding: 20px; */
 }
 
@@ -35,6 +37,10 @@ h1 {
     position: absolute;
     left: 1rem;
     top: 0;
+}
+
+.website_title {
+    cursor: pointer;
 }
 
 .search {
@@ -59,6 +65,9 @@ h1 {
 main {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
 }
 
 .movie {
